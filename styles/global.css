@@ -2,7 +2,9 @@ body {
   box-sizing: border-box;
   margin: 0;
 }
-
+h3 {
+  margin: 0;
+}
 :root {
   --glacial-blue-ice: #2B8EAD;
   --hippie-blue: #6F98A8;
