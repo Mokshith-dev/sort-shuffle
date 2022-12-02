@@ -23,6 +23,7 @@
   place-items: center;
   color: white;
   font-size: 5rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 .hippie-blue {
   background-color: var(--hippie-blue);
@@ -50,6 +51,7 @@
   height: 40px;
   border: none;
   cursor: pointer;
+  text-transform: uppercase;
 }
 .footer {
   text-align: center;
