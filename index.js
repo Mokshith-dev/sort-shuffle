@@ -37,7 +37,7 @@ function sortCardsContainer() {
 function shuffleCardsContainer() {
   // function for shuffling cards
   /* 
-  Here I am shuffling children of cards container not just their content.
+  Here I am shuffling children of cards-container not just their content.
   So that their background color will stick to the respective number,
   as I am considering the individual child inside cards-container as a card and
   I am shuffling the cards as per the requirement.

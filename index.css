@@ -2,17 +2,20 @@
 
 .heading {
   text-align: center;
-  margin-top: 50px;
+  margin-top: 30px;
   margin-bottom: 16px;
 }
 .container {
   display: flex;
   flex-direction: row;
   gap: 24px;
-  justify-content: center;
+  width: 960px;
+  margin: 0 auto;
+  background-color: var(--soft-peach);
+  border-top: 5px solid var(--pale-slate);
 }
 .cards-container {
-  width: 600px;
+  width: 75%;
   height: 600px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -55,12 +58,24 @@
 }
 .footer {
   text-align: center;
+  background-color: var(--soft-peach);
+  width: 960px;
+  margin: 0 auto;
+  padding: 15px 0 30px 0;
 }
 
 @media screen and (max-width:900px){
+  .heading {
+    background-color: var(--dune);
+    color: white;
+    margin-top: 0;
+    padding: 16px 0;
+    margin-bottom: 0;
+  }
  .container {
   flex-direction: column-reverse;
   align-items: center;
+  width: 100%;
  } 
  .cards-container {
   width: 600px;
@@ -68,19 +83,20 @@
  }
  .buttons-container {
   flex-direction: row;
-  margin-top: 0;
+  margin-top: 16px;
  }
  .button {
   height: 60px;
   width: 120px;
  }
+ .footer {
+  width: 100%;
+ }
 }
 @media screen and (max-width: 600px) {
-  .heading {
-    background-color: var(--dune);
-    color: white;
-    margin-top: 0;
-    padding: 16px 0;
+  .container {
+    background-color: white;
+    border: none;
   }
   .cards-container {
     width: 88%;
@@ -89,26 +105,26 @@
     grid-template-columns: repeat(1, 1fr);
     row-gap: 8px;
   }
+  .hippie-blue {
+    border-left: 8px solid var(--hippie-blue);
+  }
+  .glacial-blue-ice {
+    border-left: 8px solid var(--glacial-blue-ice);
+  }
+  .pickled-bluewood {
+    border-left: 8px solid var(--pickled-bluewood);
+  }
+  .pale-slate {
+    border-left: 8px solid var(--pale-slate);
+  }
   .card {
     height: 40px;
     font-size: 1rem;
     color: black;
     font-weight: 600;
-  }
-  .hippie-blue {
-    border-left: 8px solid var(--hippie-blue);
     background-color: var(--soft-peach);
   }
-  .glacial-blue-ice {
-    border-left: 8px solid var(--glacial-blue-ice);
-    background-color: var(--soft-peach);
-  }
-  .pickled-bluewood {
-    border-left: 8px solid var(--pickled-bluewood);
-    background-color: var(--soft-peach);
-  }
-  .pale-slate {
-    border-left: 8px solid var(--pale-slate);
-    background-color: var(--soft-peach);
+  .footer {
+    background-color: transparent;
   }
 }
