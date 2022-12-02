@@ -1,4 +1,4 @@
-# `Shuffle and Sort Assignment`
+# `Shuffle and Sort`
 
 Features:
 
